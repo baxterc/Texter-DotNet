@@ -211,4 +211,14 @@
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Program.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Startup.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Controllers\HomeController.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926164914_Initial.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926164914_Initial.Designer.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926173347_RemoveExtraUserId.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926173347_RemoveExtraUserId.Designer.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\ApplicationDbContextModelSnapshot.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ApplicationDbContext.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ApplicationUser.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\Contact.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\Message.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ViewModels\LogInViewModel.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ViewModels\RegisterViewModel.cs
