@@ -39,9 +39,13 @@ namespace Texter.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult SendMessage(Message newMessage)
+        public IActionResult SendMessage(SendMessageViewModel newMessage)
         {
-            newMessage.Send();
+            foreach(string recipient in newMessage.Recipients)
+            {
+                Message individualMessage = new Models.Message { To = recipient, From = newMessage.From, Body = newMessage.Body, Status = newMessage.Status };
+                individualMessage.Send();
+            }
             return RedirectToAction("Index");
         }
         public IActionResult Register()

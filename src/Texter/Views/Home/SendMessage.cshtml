@@ -3,20 +3,21 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model Texter.Models.Message
+@model Texter.Models.ViewModels.SendMessageViewModel
 
 
 <h2>Send a new message</h2>
 <hr />
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.To)
-    <select id="To" name="To">
+    <label for="Recipients">Recipients:</label>
+    <select id="Recipients" name="Recipients" multiple="multiple">
         @foreach(var contact in ViewBag.User.Contacts)
         {
             <option value=@contact.Number>@contact.Name</option>
         }
     </select>
+
     @Html.LabelFor(model => model.From)
     @Html.TextBoxFor(model => model.From)
     @Html.LabelFor(model => model.Body)
