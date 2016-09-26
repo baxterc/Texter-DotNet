@@ -5,12 +5,18 @@
 
 @model Texter.Models.Message
 
+
 <h2>Send a new message</h2>
 <hr />
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.To)
-    @Html.TextBoxFor(model => model.To)
+    <select id="To" name="To">
+        @foreach(var contact in ViewBag.User.Contacts)
+        {
+            <option value=@contact.Number>@contact.Name</option>
+        }
+    </select>
     @Html.LabelFor(model => model.From)
     @Html.TextBoxFor(model => model.From)
     @Html.LabelFor(model => model.Body)

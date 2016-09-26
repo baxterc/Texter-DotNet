@@ -10,6 +10,7 @@ namespace Texter.Models
     [Table("Contacts")]
     public class Contact
     {
+        public string ApplicationUserId { get; internal set; }
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }

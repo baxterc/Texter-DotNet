@@ -10,6 +10,7 @@
     @if (User.Identity.IsAuthenticated)
     {
         <p>Hello @User.Identity.Name!</p>
+        @Html.ActionLink("Add a Contact", "AddContact")
         @using (Html.BeginForm("LogOff", "Home"))
         {
             <input type="submit" class="btn btn-default" value="Log out" />

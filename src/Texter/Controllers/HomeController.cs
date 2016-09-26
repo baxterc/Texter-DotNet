@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Texter.Models;
 using Texter.Models.ViewModels;
 using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
 
 namespace Texter.Controllers
 {
@@ -32,6 +34,8 @@ namespace Texter.Controllers
         }
         public IActionResult SendMessage()
         {
+            var UserId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            ViewBag.User = _db.Users.Include(u => u.Contacts).FirstOrDefault(u=>u.Id == UserId);
             return View();
         }
         [HttpPost]
@@ -81,6 +85,19 @@ namespace Texter.Controllers
         public async Task<IActionResult> LogOff()
         {
             await _signInManager.SignOutAsync();
+            return RedirectToAction("Index");
+        }
+        public IActionResult AddContact()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddContact(Contact newContact)
+        {
+            var UserId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            newContact.ApplicationUserId = UserId;
+            _db.Contacts.Add(newContact);
+            _db.SaveChanges();
             return RedirectToAction("Index");
         }
     }

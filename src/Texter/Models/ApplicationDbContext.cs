@@ -14,6 +14,6 @@ namespace Texter.Models
         {
 
         }
-        public DbSet<Contact> Contacts;
+        public DbSet<Contact> Contacts { get; set; }
     }
 }

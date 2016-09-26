@@ -215,6 +215,8 @@ c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrat
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926164914_Initial.Designer.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926173347_RemoveExtraUserId.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926173347_RemoveExtraUserId.Designer.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926182511_ChangedContacts.cs
+c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926182511_ChangedContacts.Designer.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\ApplicationDbContextModelSnapshot.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ApplicationDbContext.cs
 c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ApplicationUser.cs

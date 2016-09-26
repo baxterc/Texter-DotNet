@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Add Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Texter.Models
+
+@model Contact
+
+<h2>Add a new contact</h2>
+<hr />
+@using (Html.BeginForm("AddContact", "Home", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+
+    @Html.LabelFor(m => m.Number)
+    @Html.TextBoxFor(m => m.Number)
+
+    <input type="submit" value="Add" />
+}

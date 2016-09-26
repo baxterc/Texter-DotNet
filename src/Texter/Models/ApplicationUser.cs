@@ -8,6 +8,6 @@ namespace Texter.Models
 {
     public class ApplicationUser: IdentityUser
     {
-        public virtual IEnumerable<Contact> Contacts { get; set; }
+        public virtual ICollection<Contact> Contacts { get; set; }
     }
 }
