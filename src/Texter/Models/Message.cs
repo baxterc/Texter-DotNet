@@ -54,5 +54,21 @@ namespace Texter.Models
             });
             return tcs.Task;
         }
+
+        public static List<Message> GetSMSResponses(string phoneNum)
+        {
+            var client = new RestClient("https://api.twilio.com/2010-04-01");
+            var request = new RestRequest("Accounts/ACa63939d73dc9006ab4a78025c9a4a581/Messages.json", Method.GET);
+            client.Authenticator = new HttpBasicAuthenticator("ACa63939d73dc9006ab4a78025c9a4a581", "c59076189c6b944ca0ffb4af630db682");
+            request.AddParameter("To", phoneNum);
+            var response = new RestResponse();
+            Task.Run(async () =>
+            {
+                response = await GetResponseContentAsync(client, request) as RestResponse;
+            }).Wait();
+            JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
+            var messageList = JsonConvert.DeserializeObject<List<Message>>(jsonResponse["messages"].ToString());
+            return messageList;
+        }
     }
 }

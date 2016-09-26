@@ -18,8 +18,7 @@
         }
     </select>
 
-    @Html.LabelFor(model => model.From)
-    @Html.TextBoxFor(model => model.From)
+    <input type="hidden" name="From" id="From" value=@ViewBag.User.PhoneNumber >
     @Html.LabelFor(model => model.Body)
     @Html.TextBoxFor(model => model.Body)
     <input type="submit" value="Send!" />

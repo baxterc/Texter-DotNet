@@ -1,5 +1,5 @@
---temp-output:c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\obj\Debug\netcoreapp1.0\
---out:c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\bin\Debug\netcoreapp1.0\Texter.dll
+--temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\bin\Debug\netcoreapp1.0\Texter.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -96,6 +96,8 @@
 --reference:C:\Users\epicodus\.nuget\packages\Microsoft.Extensions.PlatformAbstractions\1.0.0\lib\netstandard1.3\Microsoft.Extensions.PlatformAbstractions.dll
 --reference:C:\Users\epicodus\.nuget\packages\Microsoft.Extensions.Primitives\1.0.0\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll
 --reference:C:\Users\epicodus\.nuget\packages\Microsoft.Extensions.WebEncoders\1.0.0\lib\netstandard1.0\Microsoft.Extensions.WebEncoders.dll
+--reference:C:\Users\epicodus\.nuget\packages\Microsoft.Net.Http\2.2.29\lib\portable-net45+win8\System.Net.Http.Extensions.dll
+--reference:C:\Users\epicodus\.nuget\packages\Microsoft.Net.Http\2.2.29\lib\portable-net45+win8\System.Net.Http.Primitives.dll
 --reference:C:\Users\epicodus\.nuget\packages\Microsoft.Net.Http.Headers\1.0.0\lib\netstandard1.1\Microsoft.Net.Http.Headers.dll
 --reference:C:\Users\epicodus\.nuget\packages\Microsoft.VisualBasic\10.0.1\ref\netstandard1.1\Microsoft.VisualBasic.dll
 --reference:C:\Users\epicodus\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\netstandard1.3\Microsoft.Win32.Primitives.dll
@@ -207,21 +209,22 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
---resource:"c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\obj\Debug\netcoreapp1.0\Texterdotnet-compile.deps.json",Texter.deps.json
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Program.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Startup.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Controllers\HomeController.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926164914_Initial.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926164914_Initial.Designer.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926173347_RemoveExtraUserId.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926173347_RemoveExtraUserId.Designer.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926182511_ChangedContacts.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\20160926182511_ChangedContacts.Designer.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Migrations\ApplicationDbContextModelSnapshot.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ApplicationDbContext.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ApplicationUser.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\Contact.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\Message.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ViewModels\LogInViewModel.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ViewModels\RegisterViewModel.cs
-c:\Users\epicodus\documents\visual studio 2015\Projects\Texter\src\Texter\Models\ViewModels\SendMessageViewModel.cs
+--reference:C:\Users\epicodus\.nuget\packages\Twilio\5.0.0-rc8\lib\netstandard1.4\Twilio.dll
+--resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\obj\Debug\netcoreapp1.0\Texterdotnet-compile.deps.json",Texter.deps.json
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Program.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Startup.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Controllers\HomeController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\20160926164914_Initial.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\20160926164914_Initial.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\20160926173347_RemoveExtraUserId.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\20160926173347_RemoveExtraUserId.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\20160926182511_ChangedContacts.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\20160926182511_ChangedContacts.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\ApplicationDbContext.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\ApplicationUser.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\Contact.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\Message.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\ViewModels\LogInViewModel.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\ViewModels\RegisterViewModel.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\ViewModels\SendMessageViewModel.cs

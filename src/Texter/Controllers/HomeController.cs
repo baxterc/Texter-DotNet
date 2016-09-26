@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Texter.Controllers
 {
     public class HomeController : Controller
@@ -32,7 +33,14 @@ namespace Texter.Controllers
             var allMessages = Message.GetMessages();
             return View(allMessages);
         }
-        public IActionResult SendMessage()
+        public IActionResult Inbox()
+        {
+            var UserId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var thisUser = _db.Users.FirstOrDefault(u => u.Id == UserId);
+            var responses = Message.GetSMSResponses(thisUser.PhoneNumber);
+            return View(responses);
+        }
+    public IActionResult SendMessage()
         {
             var UserId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             ViewBag.User = _db.Users.Include(u => u.Contacts).FirstOrDefault(u=>u.Id == UserId);
@@ -56,7 +64,7 @@ namespace Texter.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            var user = new ApplicationUser { UserName = model.Email };
+            var user = new ApplicationUser { UserName = model.Email, PhoneNumber = model.PhoneNumber};
             IdentityResult result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
